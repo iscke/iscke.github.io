@@ -136,7 +136,7 @@ var data =
              [  
                 "Mason",
                 "Mason",
-                "Innocent Child (d1 compulsive"
+                "Innocent Child (d1 compulsive)"
              ],
              [  
                 "Mason",

@@ -3784,7 +3784,8 @@ function parseRole(roleString) {
         alignment: '',
     };
     const problems = [];
-
+    const ignored = [];
+  
     // if a role has a modifier with an alignment and a proper alignment,
     // the proper alignment overrides the modifier's alignment
     let modAlignment = '';
@@ -3820,7 +3821,7 @@ function parseRole(roleString) {
             currentWord.pop();
         }
         // no matches, take the first word off and continue
-        roleWords.shift();
+        ignored.push(roleWords.shift());
     }
 
     role.alignment = role.alignment || modAlignment;
@@ -3836,5 +3837,5 @@ function parseRole(roleString) {
         role.memo.push(...MafiaData.alignments[role.alignment].memo);
     }
 
-    return {role, problems};
+    return {role, problems, ignored};
 }

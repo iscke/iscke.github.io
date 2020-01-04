@@ -16,8 +16,10 @@
 
 <body>
 
-    <label>Role: <input id="roleinput" type="text"></label>
-    <button onclick="parse()">Parse</button>
+    <form onsubmit="parse(); return false">
+        <label>Role: <input id="roleinput" type="text"></label>
+        <input type="submit" value="Parse"/>
+        </form>
 
     <h2 id="name"></h2>
     <div id="details"></div>

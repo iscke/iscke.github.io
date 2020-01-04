@@ -38,14 +38,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Anti-Survivor: You are the only person who wins if you survive until the end of the game."
         ]
       },
-      "area_51_detective": {
+      "area 51 detective": {
         "name": "Area 51 Detective",
         "id": "area51detective",
         "memo": [
           "Area 51 Detective: During the Night, you may PM the host the name of another player. This player will not be able to use an action if they are an Alien."
         ]
       },
-      "area_51_immunologist": {
+      "area 51 immunologist": {
         "name": "Area 51 Immunologist",
         "id": "area51immunologist",
         "memo": [
@@ -67,7 +67,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Avoider: During the Night, you may PM the host the name of another player. If this player targeted you with an action, this action fails."
         ]
       },
-      "baby_monarch": {
+      "baby monarch": {
         "name": "Baby Monarch",
         "id": "babymonarch",
         "memo": [
@@ -89,7 +89,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Bailiff: During the Night, you may PM the host the name of another player. If this player is an X-Shot role, they will lose all of their shots."
         ]
       },
-      "birthday_boy": {
+      "birthday boy": {
         "name": "Birthday Boy",
         "id": "birthdayboy",
         "alignment": "solo",
@@ -97,7 +97,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Birthday Boy: You start as a Survivor. When you are lynched, you may pick another player. You become an exact copy of this player, including alignment."
         ]
       },
-      "black_goo": {
+      "black goo": {
         "name": "Black Goo",
         "id": "blackgoo",
         "alignment": "town",
@@ -156,9 +156,9 @@ window.MafiaData = JSON.parse(String.raw`{
           "Bouncer: During the Night, you may PM the host the name of another player. Anyone who targeted this player will die."
         ]
       },
-      "broken_vanillaiser": {
+      "broken vanillaiser": {
         "name": "Broken Vanillaiser",
-        "id": "broken_vanillaiser",
+        "id": "broken vanillaiser",
         "memo": [
           "Broken Vanillaiser: Once a game, at night, you may PM the host that you want to activate the Broken Vanillaiser. For the next day and night, all players will be their Vanilla variants."
         ]
@@ -170,7 +170,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Bus Driver: During the Night, you may PM the host the names of two players. People who targeted either of these players will instead target the other one."
         ]
       },
-      "chameleon_goo": {
+      "chameleon goo": {
         "name": "Chameleon Goo",
         "id": "chameleongoo",
         "alignment": "goo",
@@ -192,7 +192,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Commuter: During the Night, you may PM the host that you want to commute. No other player will be able to target you this night."
         ]
       },
-      "compatibility_checker": {
+      "compatibility checker": {
         "name": "Compatibility Checker",
         "id": "compatibilitychecker",
         "memo": [
@@ -206,7 +206,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Confidant: During the Night, you may PM the host the name of another player. You will use the same action as the target, on the same target as them."
         ]
       },
-      "conspiracy_theorist": {
+      "conspiracy theorist": {
         "name": "Conspiracy Theorist",
         "id": "conspiracytheorist",
         "memo": [
@@ -214,14 +214,14 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "fx/mafia-cop.png"
       },
-      "power_cop": {
+      "power cop": {
         "name": "Power Cop",
         "id": "powercop",
         "memo": [
           "Power Cop: During the Night, you can PM the host the name of another player. They will tell you how strong that player's role is on a scale from 0 to 10."
         ]
       },
-      "role_cop": {
+      "role cop": {
         "name": "Role Cop",
         "id": "rolecop",
         "memo": [
@@ -237,7 +237,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "fx/mafia-cop.png"
       },
-      "vanilla_cop": {
+      "vanilla cop": {
         "name": "Vanilla Cop",
         "id": "vanillacop",
         "memo": [
@@ -274,7 +274,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Coroner: Each night you can PM the host the name of another (dead) player. You learn the role(s) of the player who killed them, but not who this role belongs to. This also works when your target dies the night you used it."
         ]
       },
-      "corrupt_queen": {
+      "corrupt queen": {
         "name": "Corrupt Queen",
         "id": "corruptqueen",
         "alignment": "solo",
@@ -282,14 +282,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Corrupt Queen: During the Night, you may PM the host the name of another player. This player will become a King, and be the only person to be able to lynch the following day. However, after the following day, this player will die."
         ]
       },
-      "cowardly_hero": {
+      "cowardly hero": {
         "name": "Cowardly Hero",
         "id": "cowardlyhero",
         "memo": [
           "Cowardly Hero: During the Night, you may PM the host the name of another player. This player will be protected from nightkills. If you are killed, the player you protected will die instead. Afterwards, you will not be able to use this action anymor."
         ]
       },
-      "cpr_doctor": {
+      "cpr doctor": {
         "name": "CPR Doctor",
         "id": "cprdoctor",
         "memo": [
@@ -317,7 +317,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Desperado: At Night, you can PM the host the name of another player. You will kill this player if they're not aligned with the TOWN, but you will die if they are."
         ]
       },
-      "wild_discard": {
+      "wild discard": {
         "name": "Wild disCard",
         "id": "wilddiscard",
         "alignment": "solo",
@@ -332,7 +332,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Discard: In IDEAs you may not pick this role."
         ]
       },
-      "discard_vendor": {
+      "discard vendor": {
         "name": "Discard Vendor",
         "id": "discardvendor",
         "memo": [
@@ -378,7 +378,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "E.T.: You win if either the Town or the Aliens win."
         ]
       },
-      "fbi_agent": {
+      "fbi agent": {
         "name": "FBI Agent",
         "id": "fbiagent",
         "memo": [
@@ -393,7 +393,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Firefighter: During the Night, you may PM the host the name of another player. This player can't be primed by an Arsonist that night."
         ]
       },
-      "flip_flop": {
+      "flip flop": {
         "name": "Flip Flop",
         "id": "flipflop",
         "alignment": "solo",
@@ -409,14 +409,14 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "fx/mafia-cop.png"
       },
-      "friend_recruiter": {
+      "friend recruiter": {
         "name": "Friend Recruiter",
         "id": "friendrecruiter",
         "memo": [
           "Besides your normal win-condition, you can win when only Friends are left alive. You can talk to other Friends. Once a game, at night, you may PM the host the name of another player. This player will be turned into a Friend."
         ]
       },
-      "fruit_vendor": {
+      "fruit vendor": {
         "name": "Fruit Vendor",
         "id": "fruitvendor",
         "memo": [
@@ -451,7 +451,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Governor: At the end of each day, the Governor can decide whether the person who would be lynched will die or not."
         ]
       },
-      "grey_goo": {
+      "grey goo": {
         "name": "Grey Goo",
         "id": "greygoo",
         "memo": [
@@ -494,7 +494,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Halter: You can give the host a set of arbitrary roles, and the host will tell you if a setup with those roles will run indefinitely."
         ]
       },
-      "hasty_lover": {
+      "hasty lover": {
         "name": "Hasty Lover",
         "id": "hastylover",
         "memo": [
@@ -522,7 +522,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Homekeeper: During the Night, you may PM the host the name of another player. If they idled, they will not be able to be nightkilled that night."
         ]
       },
-      "innocent_child": {
+      "innocent child": {
         "name": "Innocent Child",
         "id": "innocentchild",
         "alignment": "Town",
@@ -632,7 +632,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Loverboy: During the Night, you can PM the host the name of another player. They will die if you die and are informed of this."
         ]
       },
-      "loyal_lover": {
+      "loyal lover": {
         "name": "Loyal Lover",
         "id": "loyallover",
         "alignment": "solo",
@@ -690,7 +690,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Monarch: You are Bulletproof, Unlynchable and a Day Vigilante. However, all these abilities go away when any one of them has been activated."
         ]
       },
-      "motion_detector": {
+      "motion detector": {
         "name": "Motion Detector",
         "id": "motiondetector",
         "memo": [
@@ -742,7 +742,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Nymphomaniac: Has to PM the host the name of a player Night 1. You will become Lovers with this player."
         ]
       },
-      "one_shot_townie": {
+      "one shot townie": {
         "name": "One Shot Townie",
         "id": "oneshottownie",
         "alignment": "solo",
@@ -764,21 +764,21 @@ window.MafiaData = JSON.parse(String.raw`{
           "Oracle: During the Night, you can PM the host a question about the setup of the game. They will answer you with YES or NO."
         ]
       },
-      "organ_donor": {
+      "organ donor": {
         "name": "Organ Donor",
         "id": "organdonor",
         "memo": [
           "Organ Donor: During the Night, you can PM the host the name of a dead player. You will die, but this player will be revived."
         ]
       },
-      "palette_goo": {
+      "palette goo": {
         "name": "Palette Goo",
         "id": "palettegoo",
         "memo": [
           "Palette Goo: During the Night, you may PM the the host a Goo type. You will turn into this type of Goo."
         ]
       },
-      "parrot_role": {
+      "parrot role": {
         "name": "Parrot Role",
         "id": "parrotrole",
         "memo": [
@@ -799,14 +799,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Praiser: During the Night, you can PM the host the name of another player. This player will take one more lynch to be lynched the following day."
         ]
       },
-      "pretty_lady": {
+      "pretty lady": {
         "name": "Pretty Lady",
-        "id": "pretty_lady",
+        "id": "pretty lady",
         "memo": [
           "Pretty Lady: During the Night, you may PM the host the name of another player. This player won't be able to use an action this Night. If you target a Werewolf performing a kill, you redirect its kill onto you."
         ]
       },
-      "private_investigator": {
+      "private investigator": {
         "name": "Private Investigator",
         "id": "privateinvestigator",
         "memo": [
@@ -901,7 +901,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Roleblocker: During the Night, you may PM the host the name of another player. This player won't be able to use an action this Night."
         ]
       },
-      "role_vanillaiser": {
+      "role vanillaiser": {
         "name": "Role Vanillaiser",
         "id": "rolevanillaiser",
         "memo": [
@@ -946,7 +946,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "fx/mafia-cop.png"
       },
-      "seraph_knight": {
+      "seraph knight": {
         "name": "Seraph Knight",
         "id": "seraphknight",
         "memo": [
@@ -954,7 +954,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "mafia-doctor.png"
       },
-      "serial_killer": {
+      "serial killer": {
         "name": "Serial Killer",
         "id": "serialkiller",
         "alignment": "solo",
@@ -984,7 +984,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Silencer: During the Night, you may PM the host the name of another player. This player will not be able to lynch during the next day."
         ]
       },
-      "solar_god": {
+      "solar god": {
         "name": "Solar God",
         "id": "solargod",
         "memo": [
@@ -1005,14 +1005,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Substitute: Once a game, during the Night, you may PM the host the name of another player. If you die before this player, this player will die instead of you."
         ]
       },
-      "subway_recruiter": {
+      "subway recruiter": {
         "name": "Subway Recruiter",
         "id": "subwayrecruiter",
         "memo": [
           "Subway Recruiter: During the Night, you may PM the host to add a player. If there's a player on the sublist, they will be added to the game, as your alignment."
         ]
       },
-      "suicide_bomber": {
+      "suicide bomber": {
         "name": "Suicide Bomber",
         "id": "suicidebomber",
         "memo": [
@@ -1100,7 +1100,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Underdog: You are aligned with yourself. You start out as a Survivor, but turn into the alignment of the first player to die during a day when they die."
         ]
       },
-      "universal_sympathiser": {
+      "universal sympathiser": {
         "name": "Universal Sympathiser",
         "id": "univeralsympathiser",
         "alignment": "solo",
@@ -1108,7 +1108,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Universal Sympathiser: You win if the Town does not win."
         ]
       },
-      "universal_usurper": {
+      "universal usurper": {
         "name": "Universal Usurper",
         "id": "universalusurper",
         "alignment": "solo",
@@ -1169,7 +1169,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "image": "fx/mafia-cop.png"
       },
-      "wild_card": {
+      "wild card": {
         "name": "Wild Card",
         "id": "wildcard",
         "memo": [
@@ -1184,7 +1184,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Wild Card: You get a different randomised role."
         ]
       },
-      "yogi_bear": {
+      "yogi bear": {
         "name": "Yogi Bear",
         "id": "yogibear",
         "memo": [
@@ -1219,7 +1219,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Backup: If the role specified in your role PM dies, you become that role instead."
         ]
       },
-      "blue_goo": {
+      "blue goo": {
         "name": "Blue Goo",
         "id": "bluegoo",
         "memo": [
@@ -1233,7 +1233,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Bomb: If you are killed, your killer will die too."
         ]
       },
-      "brown_goo": {
+      "brown goo": {
         "name": "Brown Goo",
         "id": "browngoo",
         "memo": [
@@ -1247,9 +1247,9 @@ window.MafiaData = JSON.parse(String.raw`{
           "Bulletproof: You cannot be nightkilled."
         ]
       },
-      "card_dealer": {
+      "card dealer": {
         "name": "Card Dealer",
-        "id": "card_dealer",
+        "id": "card dealer",
         "memo": [
           "Anyone who targets you, will have their role replaced by a random other role."
         ]
@@ -1275,7 +1275,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Compulsive: You must your use action each night."
         ]
       },
-      "compulsive_child_killer": {
+      "compulsive child killer": {
         "name": "Compulsive Child Killer",
         "id": "compulsivechildkiller",
         "memo": [
@@ -1296,7 +1296,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Contrary: Your action only succeeds when it'd fail without this modifier."
         ]
       },
-      "curfew_agent": {
+      "curfew agent": {
         "name": "Curfew Agent",
         "id": "curfewagent",
         "memo": [
@@ -1317,7 +1317,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Deactivator: While you are alive, a specific role can't be used."
         ]
       },
-      "death_miller": {
+      "death miller": {
         "name": "Death Miller",
         "id": "deathmiller",
         "memo": [
@@ -1373,7 +1373,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Evangelistic: You will be inspected as CULT."
         ]
       },
-      "excellent_sense_of_smell": {
+      "excellent sense of smell": {
         "name": "Excellent Sense of Smell",
         "id": "ecxellentsenseofsmell",
         "memo": [
@@ -1408,7 +1408,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Godfather: You will be inspected as NOT MAFIA."
         ]
       },
-      "gold_goo": {
+      "gold goo": {
         "name": "Gold Goo",
         "id": "goldgoo",
         "memo": [
@@ -1422,14 +1422,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Gravedigger: You will return as if you targeted the player who died to Watchers and Trackers."
         ]
       },
-      "green_goo": {
+      "green goo": {
         "name": "Green Goo",
         "id": "greengoo",
         "memo": [
           "Whenever a player targets you with an action, they will become green goo and lose any powers they currently have. Their faction doesn't change."
         ]
       },
-      "grim_reaper": {
+      "grim reaper": {
         "name": "Grim Reaper",
         "id": "grimreaper",
         "memo": [
@@ -1485,9 +1485,9 @@ window.MafiaData = JSON.parse(String.raw`{
           "Illusionist: You become a Restless Spirit after death."
         ]
       },
-      "immobile_parrot": {
+      "immobile parrot": {
         "name": "Immobile Parrot",
-        "id": "immobile_parrot",
+        "id": "immobile parrot",
         "memo": [
           "Immobile Parrot: Anyone who targets you, targets themselves instead."
         ]
@@ -1527,7 +1527,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Lightkeeper: When you die, the next day is anonymous (and all messages go through the host)."
         ]
       },
-      "lightning_rod": {
+      "lightning rod": {
         "name": "Lightning Rod",
         "id": "lightningrod",
         "memo": [
@@ -1653,7 +1653,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Omniscient: You know all roles that are present in the setup."
         ]
       },
-      "orange_goo": {
+      "orange goo": {
         "name": "Orange Goo",
         "id": "orangegoo",
         "memo": [
@@ -1695,7 +1695,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Randomizer: If multiple people targeted you, they will target a random person who targeted you instead."
         ]
       },
-      "paranoid_gun_owner": {
+      "paranoid gun owner": {
         "name": "Paranoid Gun Owner",
         "id": "paranoidgunowner",
         "memo": [
@@ -1709,7 +1709,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Passive: You cannot choose when to activate your role."
         ]
       },
-      "post_restriction": {
+      "post restriction": {
         "name": "Post Restriction",
         "id": "postrestriction",
         "memo": [
@@ -1730,14 +1730,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Public: Your result is displayed publicly."
         ]
       },
-      "purple_goo": {
+      "purple goo": {
         "name": "Purple Goo",
         "id": "purplegoo",
         "memo": [
           "Purple Goo: Whenever someone targets you with an action, you switch roles with that player."
         ]
       },
-      "rainbow_goo": {
+      "rainbow goo": {
         "name": "Rainbow Goo",
         "id": "rainbowgoo",
         "memo": [
@@ -1751,7 +1751,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Random: Your role is used randomly."
         ]
       },
-      "red_goo": {
+      "red goo": {
         "name": "Red Goo",
         "id": "redgoo",
         "memo": [
@@ -1772,21 +1772,21 @@ window.MafiaData = JSON.parse(String.raw`{
           "Reserved: This player can PM anyone, and can be PMd back, but may not talk in the main chat (excluding lynches)."
         ]
       },
-      "restless_spirit": {
+      "restless spirit": {
         "name": "Restless Spirit",
         "id": "restlessspirit",
         "memo": [
           "Restless Spirit: You can lynch after your death."
         ]
       },
-      "retired_marine": {
+      "retired marine": {
         "name": "Retired Marine",
         "id": "retiredmarine",
         "memo": [
           "Retired Marine: You cannot be killed by Serial Killers."
         ]
       },
-      "retired_werewolf_hunter": {
+      "retired werewolf hunter": {
         "name": "Retired Werewolf Hunter",
         "id": "retiredwerewolfhunter",
         "memo": [
@@ -1807,7 +1807,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Sane: You receive the correct results upon inspection."
         ]
       },
-      "secret_agent": {
+      "secret agent": {
         "name": "Secret Agent",
         "id": "secretagent",
         "memo": [
@@ -1835,7 +1835,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Senpai: When you get lynched, everyone who lynched you dies as well."
         ]
       },
-      "silver_goo": {
+      "silver goo": {
         "name": "Silver Goo",
         "id": "silvergoo",
         "memo": [
@@ -1877,7 +1877,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Talkative: If anyone else has an ability that causes them to be able to talk to other players, you may talk with them too."
         ]
       },
-      "teal_goo": {
+      "teal goo": {
         "name": "Teal Goo",
         "id": "tealgoo",
         "memo": [
@@ -1898,7 +1898,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Tentacled: You will always be inspected as ALIEN."
         ]
       },
-      "toxic_goo": {
+      "toxic goo": {
         "name": "Toxic Goo",
         "id": "toxicgoo",
         "memo": [
@@ -1926,7 +1926,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Trypophobic: You may vanillaise someone upon being lynched."
         ]
       },
-      "turquoise_goo": {
+      "turquoise goo": {
         "name": "Turquoise Goo",
         "id": "turquoisegoo",
         "memo": [
@@ -1940,7 +1940,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Ugly: You know how many Goo-aligned players there are, and can win with them as long as you survive. You are inspected as ALIEN."
         ]
       },
-      "universal_backup": {
+      "universal backup": {
         "name": "Universal Backup",
         "id": "universalbacup",
         "memo": [
@@ -1989,14 +1989,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Whisperer: You may PM any player in the game, but they may not PM you back."
         ]
       },
-      "white_goo": {
+      "white goo": {
         "name": "White Goo",
         "id": "whitegoo",
         "memo": [
           "White Goo: All dead players will turn to White Goo as they die. You show up as town on death."
         ]
       },
-      "wrong_place_at_the_wrong_time": {
+      "wrong place at the wrong time": {
         "name": "Wrong Place at the Wrong Time",
         "id": "wrongplaceatthewrongtime",
         "memo": [
@@ -2010,7 +2010,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "X-Shot: You may only use this ability X times during the game."
         ]
       },
-      "yellow_goo": {
+      "yellow goo": {
         "name": "Yellow Goo",
         "id": "yellowgoo",
         "memo": [
@@ -2187,26 +2187,26 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Ace",
         "desc": "Ace: Coordinate your shots to not lose the game! Reroll if nobody is Mafia."
       },
-      "assassin_in_the_court": {
+       "assassininthecourt"": {
         "4": "Solo Assassin, Guard, Guard, King",
         "5": "Solo Assassin, Guard, Guard, Guard, King",
         "6": "Solo Assassin, Guard, Guard, Guard, Guard, King",
         "7": "Solo Assassin, Guard, Guard, Guard, Guard, Guard, King",
-        "name": "Assassin in the Court",
+        "name":  "assassininthecourt"",
         "desc": "The Assassin tries to shoot the King to win! The Guards try to protect the King."
       },
-      "too_much_scum": {
+      "toomuchscum": {
         "8": "Mafia Goon, Mafia Goon, Solo Serial Killer, FBI Agent, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "12": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Solo Lyncher, Cop, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "name": "Too Much Scum",
-        "desc": "Too Much Scum: Find the many scum, reminiscent of the Jungle Republic setup."
+        "name":  "toomuchscum"",
+        "desc":  "toomuchscum": Find the many scum, reminiscent of the Jungle Republic setup."
       },
       "brothel": {
         "9": "Mafia Goon, Mafia Goon, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Girl",
         "name": "Brothel Mafia",
         "desc": "Brothel Mafia: 6 Pretty Ladies that don't know their specific role. Some may do unexpected things like in MedMaf."
       },
-      "bullet_hell": {
+      "bullethell": {
         "5": "Mason, Mason, Solo Serial Killer, Solo Serial Killer, Solo Serial Killer",
         "name": "Bullet Hell",
         "desc": "Bullet Hell: Try to avoid all the shots at Night to win!"
@@ -2236,7 +2236,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Conformities",
         "desc": "Conformities: Don't get too attached to your role, because it is bound to change."
       },
-      "creepy_girl": {
+      "creepygirl": {
         "5": "Solo Creepy Girl, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Creepy Girl",
         "desc": "Creepy Girl: Night 0 the Creepy Girl gives someone a doll. Each night, it has to be passed. If the person with the Doll is lynched, or a person gets the Doll for a second time, the Creepy Girl wins."
@@ -2256,12 +2256,12 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Dethy",
         "desc": "Dethy: Four Cops against one Mafia Goon. They just won't always get the correct results..."
       },
-      "donner_party": {
+      "donnerparty": {
         "12": "Cannibal Mafia Goon, Cannibal Mafia Goon, Cannibal Serial Killer, Cannibal Vigilante, Dietist, Roleblocker, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Donner Party",
         "desc": "Donner Party: Many kills happen... but they won't just flip that easily!"
       },
-      "double_day": {
+      "doubleday": {
         "16": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Double Day",
         "desc": "Double Day: Like Vanilla, but with two Days prior to each Night. Double the chances to lynch scum!"
@@ -2271,12 +2271,12 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Day-Vig3",
         "desc": "Day-Vig3: Shoot the other Day-Vig, before they shoot you!"
       },
-      "drookez_is_mafia_mafia": {
+      "drookezismafiamafia": {
         "5": "Drookez, Solo Traitor Lover, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "name": "Drookez is Mafia Mafia",
+        "name":  "drookezismafiamafia",
         "desc": "Drookez is Mafia Mafia: Drookez is Mafia, but try to find his Lover! Drookez must survive with his Lover to win."
       },
-      "eternal_sun": {
+      "eternalsun": {
         "5": "Mafia Compulsive Janitor, One-Shot Gunsmith, Vanilla Townie, Vanilla Townie, Vanilla Townie,",
         "6": "Mafia Compulsive Janitor, Mafia Goon, One-Shot Gunsmith, One-Shot Reviver, Vanilla Townie, Vanilla Townie,",
         "7": "Mafia Compulsive Janitor, Mafia Coroner, Coroner, One-Shot Gunsmith, Vanilla Townie, Vanilla Townie, Vanilla Townie,",
@@ -2301,17 +2301,17 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Eyes",
         "desc": "Eyes: Avoid the Tracker and Watcher to last till the end!"
       },
-      "friends_and_enemies_and_enemies": {
+      "friendsandenemiesandenemies": {
         "12": "Mafia Goon, Mafia Goon, Werewolf, Werewolf, Mason, Mason, Mason, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Friends and Enemies and Enemies",
         "desc": "Two opposing scum factions and a group of Masons fight for dominance!"
       },
-      "forest_fire": {
+      "forestfire": {
         "9": "Arsonist, Arsonist, Tree, Tree, Tree, Tree, Tree, Tree, Firefighter",
         "name": "Forest Fire",
         "desc": "Forest Fire: The forest risks being burned down! Stop the Arsonists before its too late."
       },
-      "fire_and_ice": {
+      "fireandice": {
         "13": "Fire Mafia, Fire Mafia, Ice Goo, Ice Goo, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Doctor",
         "name": "Fire and Ice",
         "desc": "Fire and Ice: Two opposing Mafia factions battle for dominance. Their kills are flavored and neutralise each other! Goo is used for flavor, but they have Mafia powers."
@@ -2342,27 +2342,27 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Journalist",
         "desc": "Journalist: Successful inspections require death..."
       },
-      "jungle_of_bullshit": {
+      "jungleofbullshit": {
         "5": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie",
         "name": "Jungle of Bullshit",
         "desc": "Jungle of Bullshit: When a Vanilla Townie is lynched Day 1, they shoot two players instead. When a Mafia Goon is lynched, they kill one of their partners and clear a Vanilla Townie."
       },
-      "jungle_anarchy": {
+      "jungleanarchy": {
         "15": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Vigilante, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Jungle Anarchy",
         "desc": "Jungle Anarchy: Two scum factions and a town nightkill. What could go wrong?"
       },
-      "jungle_republic": {
+      "junglerepublic": {
         "12": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Seer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Jungle Republic",
         "desc": "Jungle Republic: There's too many scum, so the Mafia can't kill..."
       },
-      "kill_all_townies": {
+      "killalltownies": {
         "17": "Mafia Goon, Mafia Godfather, Mafia Doctor, Werewolf, Alpha Werewolf, Werewolf Doctor, Cop, Seer, Vigilante, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Kill All Townies",
         "desc": "Kill All Townies: The more Town deaths, the more days! For each Town role's death at Night, there's a Day."
       },
-      "kids_with_guns": {
+      "kidswithguns": {
         "8": "Mafia Suicide Bomber, Mafia Goon, One-Shot Vigilante, Innocent Child, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Kids With Guns",
         "desc": "Kids With Guns: A theme based around roles that can kill people!"
@@ -2376,12 +2376,12 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Kirby",
         "desc": "Kirby: Decide who you think would use this power-up well, or give a bad one to your scumread. It's all up to you!"
       },
-      "less_pressure": {
+      "lesspressure": {
         "8": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Innocent Child, Innocent Child",
         "name": "Less Pressure",
         "desc": "Less Pressure: Lead the town as an Innocent Child by finding the 3 Mafia Goons. Be aware, they get to kill someone upon dying."
       },
-      "life_or_death": {
+      "lifeordeath": {
         "6": "One-Shot Deathproof Mafia Goon, One-Shot Deathproof Traitor Vigilante, One-Shot Deathproof Vigilante, One-Shot Deathproof Reloader, One-Shot Deathproof Reloader, One-Shot Deathproof Reloader",
         "name": "Life or Death",
         "desc": "Life or Death: Everyone is Deathproof! Who will be reloaded, and who won't?"
@@ -2418,12 +2418,12 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Masonries",
         "desc": "Masonries: You are divided into three chats, of which you can see only two..."
       },
-      "maintaining_law_order_and_shallow_relationships": {
+      "maintaininglaworderandshallowrelationships": {
         "10": "Mafia One-Shot Paranoid Gun Owner, Mafia One-Shot Paranoid Gun Owner, Cop, Jailkeeper, Tourist, Tourist, Tourist, Tourist, Tourist, Tourist",
         "name": "Maintaining Law, Order and Shallow Relationships",
         "desc": "Maintaining Law, Order and Shallow Relationships: A theme where the Mafia try to kill the town roles passively by activating their PGO!"
       },
-      "medical_mafia": {
+      "medicalmafia": {
         "9": "Mafia Goon, Mafia Goon, Doctor, Doctor, Doctor, Doctor, Doctor, Doctor, Nurse",
         "name": "Medical Mafia",
         "desc": "Medical Mafia: A theme where the Mafia invade a hospital. The Mafia has to beat a group of Doctors... who may not all heal their patients."
@@ -2433,7 +2433,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Minesweeper",
         "desc": "Minesweeper: A lot of scum... and a lot of bombs who explode upon being hit."
       },
-      "modified_execution": {
+      "modifiedexecution": {
         "4": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "5": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "6": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
@@ -2459,7 +2459,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Near-Vanilla",
         "desc": "Near-Vanilla: Vanilla with with a Doctor and a Jailkeeper for some spice."
       },
-      "neighbors_dilemma": {
+      "neighborsdilemma": {
         "6": "Solo Odd-Night Serial Killer Neighbor, Solo Even-Night Serial Killer Neighbor, Town Neighbor, Town Neighbor, Town Neighbor, Town Neighbor",
         "name": "Neighbors Dilemma",
         "desc": "Neighbors Dilemma: A theme where you get a Neighbor, who you can privately talk to. However, they may be scum..."
@@ -2472,7 +2472,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Nominations",
         "desc": "Nominations: A theme where every even day there's only three possible lynches, as chosen by the Mafia!"
       },
-      "no_setup": {
+      "nosetup": {
         "4": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "5": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "6": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
@@ -2498,7 +2498,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Pairings",
         "desc": "Pairings: A theme where all players are paired up. Pairs have the same role and alignment, which is only revealed when both of them have died!"
       },
-      "paris_mafia": {
+      "parismafia": {
         "11": "Mafia Goon, Mafia Goon, Mime, Mime, Watcher, Jailkeeper, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "12": "Mafia Goon, Mafia Goon, Mime, Mime, Watcher, Jailkeeper, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Paris Mafia",
@@ -2557,7 +2557,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Shifting",
         "desc": "Shifting: When someone is successfully protected, they become a Doctor. The Doctor who protected becomes a Mafia Goon, and the Mafia Goon becomes whatever the protected person was. After each night, all users are informed of their current role."
       },
-      "space_invaders": {
+      "spaceinvaders": {
         "5": "Alien, Junior Laser Cannon, Bunker, Bunker, Bunker",
         "6": "Alien, Junior Laser Cannon, Bunker, Bunker, Bunker, Bunker",
         "7": "Alien, Junior Laser Cannon, Bunker, Bunker, Bunker, Bunker, Bunker",
@@ -2592,7 +2592,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Triplets",
         "desc": "Triplets: A nine-player theme, where at first everyone is split into groups of three. You must lynch someone in this group first!"
       },
-      "the_one_i_cannot_kill": {
+      "theoneicannotkill": {
         "3": "Mafia Semi-Priest, Vanilla Townie, Vanilla Townie",
         "name": "The One I Cannot Kill",
         "desc": "The One I Cannot Kill: Here, the Mafia may not hammer one of the two townies, determined pre-game."
@@ -2602,7 +2602,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Shortnight",
         "desc": "Shortnight: A smaller version of Triplets, where you play in two groups of three."
       },
-      "twin_trap": {
+      "twintrap": {
         "9": "Track-Immune Mafia Goon, Watch-Immune Mafia Goon, Tracker, Watcher, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Twin Trap",
         "desc": "Twin Trap: The Mafia has to make a choice. Who is more at risk of being spotted?"
@@ -2628,19 +2628,19 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Vanilla",
         "desc": "A simple theme with only Mafia Goons and Vanilla Townies."
       },
-      "we_need_a_clear": {
+      "weneedaclear": {
         "5": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "We Need a Clear",
         "desc": "We Need a Clear: When a Vanilla Townie is lynched Day 1, they get cleared instead."
       },
-      "we_need_a_fifth": {
+      "weneedafifth": {
         "4": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie",
         "name": "We Need a Fifth",
         "desc": "We Need a Fifth: When a Vanilla Townie is lynched Day 1, they shoot another player instead. When a Mafia Goon is lynched, they have to clear a Vanilla Townie."
       }
     },
     "IDEAs": {
-      "greater_idea": {
+      "greateridea": {
         "name": "Greater Idea",
         "roles": [
           "Vanilla Townie",
@@ -2795,7 +2795,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "choices": 2
       },
-      "greatest_idea": {
+      "greatestidea": {
         "name": "Greatest Idea",
         "roles": [
           "Vanilla Townie",
@@ -2951,7 +2951,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "choices": 3
       },
-      "replicant_greater_idea": {
+      "replicantgreateridea": {
         "name": "Replicant Greater Idea",
         "roles": [
           "Vanilla Townie",
@@ -3106,7 +3106,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "choices": 2
       },
-      "vanilla_idea": {
+      "vanillaidea": {
         "name": "Vanilla Idea",
         "roles": [
           "Town",
@@ -3264,7 +3264,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "choices": 2
       },
-      "cracking_idea": {
+      "crackingidea": {
         "name": "Cracking Idea",
         "roles": [
           "Vanilla Townie",
@@ -3373,7 +3373,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ],
         "choices": 2
       },
-      "snaqs_idea": {
+      "snaqsidea": {
         "name": "Snaq's Idea",
         "roles": [
           "Vanilla Townie (Must Pick)",
@@ -3633,137 +3633,137 @@ window.MafiaData = JSON.parse(String.raw`{
       }
     },
     "aliases": {
-      "aitc": "assassin_in_the_court",
-      "aitp": "assassin_in_the_court",
-      "assassin_in_the_castle": "assassin_in_the_court",
-      "assassin_in_the_palace": "assassin_in_the_court",
-      "tms": "too_much_scum",
-      "btms": "too_much_scum",
-      "baby_too_much_scum": "too_much_scum",
-      "brothel_mafia": "brothel",
+      "aitc":  "assassininthecourt"",
+      "aitp":  "assassininthecourt"",
+      "assassin in the castle":  "assassininthecourt"",
+      "assassin in the palace":  "assassininthecourt"",
+      "tms":  "toomuchscum"",
+      "btms":  "toomuchscum"",
+      "baby too much scum":  "toomuchscum"",
+      "brothel mafia": "brothel",
       "bh": "bloodhound",
       "dv3": "dayvig3",
-      "dimm": "drookez_is_mafia_mafia",
-      "fee": "friends_and_enemies_and_enemies",
-      "ff": "forest_fire",
-      "fi": "fire_and_ice",
-      "fire_ice": "fire_and_ice",
-      "job": "jungle_of_bullshit",
-      "kat": "kill_all_townies",
-      "kwg": "kids_with_guns",
-      "lod": "life_or_death",
-      "lod6": "life_or_death",
+      "dimm":  "drookezismafiamafia",
+      "fee": "friendsandenemiesandenemies",
+      "ff": "forestfire",
+      "fi": "fireandice",
+      "fire ice": "fireandice",
+      "job": "jungleofbullshit",
+      "kat": "killalltownies",
+      "kwg": "kidswithguns",
+      "lod": "lifeordeath",
+      "lod6": "lifeordeath",
       "lh": "lighthouse",
-      "madness_os": "madness",
-      "mlosr": "maintaining_law_order_and_shallow_relationships",
-      "medmaf": "medical_mafia",
-      "bomb_os": "minesweeper",
-      "execution": "modified_execution",
-      "modexe": "modified_execution",
-      "near_vanilla": "nearvanilla",
-      "nd": "neighbors_dilemma",
+      "madness os": "madness",
+      "mlosr": "maintaininglaworderandshallowrelationships",
+      "medmaf": "medicalmafia",
+      "bomb os": "minesweeper",
+      "execution": "modifiedexecution",
+      "modexe": "modifiedexecution",
+      "near vanilla": "nearvanilla",
+      "nd": "neighborsdilemma",
       "nommy": "nominations",
       "nomination": "nominations",
       "pairs": "pairings",
-      "paris": "paris_mafia",
-      "semi_nightless": "seminightless",
+      "paris": "parismafia",
+      "semi nightless": "seminightless",
       "ss2": "supersaint2",
       "ss3": "supersaint3",
-      "semipriest": "the_one_i_cannot_kill",
+      "semipriest": "theoneicannotkill",
       "nilla": "vanilla",
-      "wnac": "we_need_a_clear",
-      "wnaf": "we_need_a_fifth",
-      "gi": "greater_idea",
-      "gesti": "greatest_idea",
-      "rgi": "replicant_greater_idea",
-      "vi": "vanilla_idea",
-      "ci": "cracking_idea",
-      "si": "snaqs_idea",
+      "wnac": "weneedaclear",
+      "wnaf": "weneedafifth",
+      "gi": "greateridea",
+      "gesti": "greatestidea",
+      "rgi": "replicantgreateridea",
+      "vi": "vanillaidea",
+      "ci": "crackingidea",
+      "si": "snaqsidea",
       "vt": "villager",
-      "vanilla_townie": "villager",
+      "vanilla townie": "villager",
       "vanillager": "villager",
       "villy": "villager",
       "townie": "villager",
       "aoat": "alien-of-all-trades",
-      "alien_of_all_trades": "alien-of-all-trades",
-      "anti_survivor": "anti-survivor",
+      "alien of all trades": "alien-of-all-trades",
+      "anti survivor": "anti-survivor",
       "antisurvivor": "anti-survivor",
-      "area51detective": "area_51_detective",
-      "area51immunologist": "area_51_immunologist",
+      "area51detective": "area 51 detective",
+      "area51immunologist": "area 51 immunologist",
       "bg": "bodyguard",
-      "backup_cop": "deputy",
-      "role_cop_classic": "rolecopclassic",
+      "backup cop": "deputy",
+      "role cop classic": "rolecopclassic",
       "coat": "cop-of-all-trades",
-      "cop_of_all_trades": "cop-of-all-trades",
+      "cop of all trades": "cop-of-all-trades",
       "coroner": "coronereternalsun",
       "coroneresun": "coronereternalsun",
-      "coroner_esun": "coronereternalsun",
-      "coroner_eternal_sun": "coronereternalsun",
-      "coroner_ci": "coronercrackingidea",
+      "coroner esun": "coronereternalsun",
+      "coroner eternal sun": "coronereternalsun",
+      "coroner ci": "coronercrackingidea",
       "coronerci": "coronercrackingidea",
-      "coroner_cracking_idea": "coronercrackingidea",
-      "backup_doctor": "nurse",
+      "coroner cracking idea": "coronercrackingidea",
+      "backup doctor": "nurse",
       "doc": "doctor",
       "diyer": "do-it-yourselfer",
-      "do_it_yourselfer": "do-it-yourselfer",
+      "do it yourselfer": "do-it-yourselfer",
       "doityourselfer": "do-it-yourselfer",
-      "deathproof_mafias_child_lover": "drookez",
-      "flipflop": "flip_flop",
-      "gray_goo": "grey_goo",
+      "deathproof mafias child lover": "drookez",
+      "flipflop": "flip flop",
+      "gray goo": "grey goo",
       "graygooci": "greygoocrackingidea",
-      "gray_goo_ci": "greygoocrackingidea",
-      "gray_goo_cracking_idea": "greygoocrackingidea",
+      "gray goo ci": "greygoocrackingidea",
+      "gray goo cracking idea": "greygoocrackingidea",
       "graygoocrackingidea": "greygoocrackingidea",
       "greygooci": "greygoocrackingidea",
-      "grey_goo_ci": "greygoocrackingidea",
-      "grey_goo_cracking_idea": "greygoocrackingidea",
-      "child": "innocent_child",
+      "grey goo ci": "greygoocrackingidea",
+      "grey goo cracking idea": "greygoocrackingidea",
+      "child": "innocent child",
       "joat": "jack-of-all-trades",
-      "jack_of_all_trades": "jack-of-all-trades",
+      "jack of all trades": "jack-of-all-trades",
       "jk": "jailkeeper",
       "stripper": "lure",
-      "oracle_si": "oraclesi",
-      "oracle_snaqs_idea": "oraclesi",
-      "parrot": "parrot_role",
-      "wereparrot": "parrot_role",
-      "hooker": "pretty_lady",
-      "pl": "pretty_lady",
-      "pi": "private_investigator",
-      "mass_redirector": "psychomagnet",
+      "oracle si": "oraclesi",
+      "oracle snaqs idea": "oraclesi",
+      "parrot": "parrot role",
+      "wereparrot": "parrot role",
+      "hooker": "pretty lady",
+      "pl": "pretty lady",
+      "pi": "private investigator",
+      "mass redirector": "psychomagnet",
       "redgooci": "redgoocrackingidea",
-      "red_goo_ci": "redgoocrackingidea",
-      "red_goo_cracking_idea": "redgoocrackingidea",
-      "role_vanillaizer": "role_vanillaiser",
+      "red goo ci": "redgoocrackingidea",
+      "red goo cracking idea": "redgoocrackingidea",
+      "role vanillaizer": "role vanillaiser",
       "suppressor": "rolestopper",
-      "sk": "serial_killer",
-      "silencer_gi": "silencergreateridea",
+      "sk": "serial killer",
+      "silencer gi": "silencergreateridea",
       "silencergi": "silencergreateridea",
-      "silencer_greater_idea": "silencergreateridea",
-      "kamikaze_pilot": "suicide_bomber",
-      "super_townie": "super",
+      "silencer greater idea": "silencergreateridea",
+      "kamikaze pilot": "suicide bomber",
+      "super townie": "super",
       "sensor": "tallier",
       "vig": "vigilante",
-      "wild_card_gi": "wildcardgreateridea",
+      "wild card gi": "wildcardgreateridea",
       "wildcardgi": "wildcardgreateridea",
-      "wild_card_greater_idea": "wildcardgreateridea",
+      "wild card greater idea": "wildcardgreateridea",
       "bp": "bulletproof",
-      "cck": "compulsive_child_killer",
-      "excellent_sense_of_smell_townie": "excellent_sense_of_smell",
-      "immobile_os_parrot": "immobile_parrot",
+      "cck": "compulsive child killer",
+      "excellent sense of smell townie": "excellent sense of smell",
+      "immobile os parrot": "immobile parrot",
       "doublevoter": "mayor",
-      "double_voter": "mayor",
+      "double voter": "mayor",
       "midnight": "night",
-      "reflexive_vigilante": "paranoid_gun_owner",
-      "pgo": "paranoid_gun_owner",
-      "restriction": "post_restriction",
+      "reflexive vigilante": "paranoid gun owner",
+      "pgo": "paranoid gun owner",
+      "restriction": "post restriction",
       "publishing": "public",
-      "strong_willed": "strong-willed",
+      "strong willed": "strong-willed",
       "strongwilled": "strong-willed",
       "avenger": "supersaint",
       "ss": "supersaint",
-      "ugly_townie": "ugly",
-      "unibackup": "universal_backup",
-      "uni_backup": "universal_backup",
+      "ugly townie": "ugly",
+      "unibackup": "universal backup",
+      "uni backup": "universal backup",
       "lynchproof": "unlynchable"
     }
   }

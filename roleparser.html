@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="data.js"> </script>
+    <script type="text/javascript" src="roleparser.js"> </script>
+    <style>
+    body {
+        max-width: 38rem;
+        padding: 2rem;
+        margin: auto;
+        background-color: #68a;
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+
+    <label>Role: <input id="roleinput" type="text"></label>
+    <button onclick="parse()">Parse</button>
+
+    <h2 id="name"></h2>
+    <div id="details"></div>
+    <div style="color: red;" id="problems"></div>
+
+</body>
+
+</html>

@@ -158,7 +158,7 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "broken vanillaiser": {
         "name": "Broken Vanillaiser",
-        "id": "broken vanillaiser",
+        "id": "brokenvanillaiser",
         "memo": [
           "Broken Vanillaiser: Once a game, at night, you may PM the host that you want to activate the Broken Vanillaiser. For the next day and night, all players will be their Vanilla variants."
         ]
@@ -801,7 +801,7 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "pretty lady": {
         "name": "Pretty Lady",
-        "id": "pretty lady",
+        "id": "prettylady",
         "memo": [
           "Pretty Lady: During the Night, you may PM the host the name of another player. This player won't be able to use an action this Night. If you target a Werewolf performing a kill, you redirect its kill onto you."
         ]
@@ -1249,7 +1249,7 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "card dealer": {
         "name": "Card Dealer",
-        "id": "card dealer",
+        "id": "carddealer",
         "memo": [
           "Anyone who targets you, will have their role replaced by a random other role."
         ]
@@ -1487,7 +1487,7 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "immobile parrot": {
         "name": "Immobile Parrot",
-        "id": "immobile parrot",
+        "id": "immobileparrot",
         "memo": [
           "Immobile Parrot: Anyone who targets you, targets themselves instead."
         ]
@@ -2187,19 +2187,19 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Ace",
         "desc": "Ace: Coordinate your shots to not lose the game! Reroll if nobody is Mafia."
       },
-       "assassininthecourt"": {
+       "assassininthecourt": {
         "4": "Solo Assassin, Guard, Guard, King",
         "5": "Solo Assassin, Guard, Guard, Guard, King",
         "6": "Solo Assassin, Guard, Guard, Guard, Guard, King",
         "7": "Solo Assassin, Guard, Guard, Guard, Guard, Guard, King",
-        "name":  "assassininthecourt"",
+        "name":  "Assassin in the Court",
         "desc": "The Assassin tries to shoot the King to win! The Guards try to protect the King."
       },
       "toomuchscum": {
         "8": "Mafia Goon, Mafia Goon, Solo Serial Killer, FBI Agent, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "12": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Solo Lyncher, Cop, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "name":  "toomuchscum"",
-        "desc":  "toomuchscum": Find the many scum, reminiscent of the Jungle Republic setup."
+        "name":  "Too Much Scum",
+        "desc":  "Too Much Scum: Find the many scum, reminiscent of the Jungle Republic setup."
       },
       "brothel": {
         "9": "Mafia Goon, Mafia Goon, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Pretty Lady, Girl",
@@ -2273,7 +2273,7 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "drookezismafiamafia": {
         "5": "Drookez, Solo Traitor Lover, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "name":  "drookezismafiamafia",
+        "name":  "Drookez is Mafia Mafia",
         "desc": "Drookez is Mafia Mafia: Drookez is Mafia, but try to find his Lover! Drookez must survive with his Lover to win."
       },
       "eternalsun": {
@@ -3633,13 +3633,13 @@ window.MafiaData = JSON.parse(String.raw`{
       }
     },
     "aliases": {
-      "aitc":  "assassininthecourt"",
-      "aitp":  "assassininthecourt"",
-      "assassin in the castle":  "assassininthecourt"",
-      "assassin in the palace":  "assassininthecourt"",
-      "tms":  "toomuchscum"",
-      "btms":  "toomuchscum"",
-      "baby too much scum":  "toomuchscum"",
+      "aitc":  "assassininthecourt",
+      "aitp":  "assassininthecourt",
+      "assassin in the castle":  "assassininthecourt",
+      "assassin in the palace":  "assassininthecourt",
+      "tms":  "toomuchscum",
+      "btms":  "toomuchscum",
+      "baby too much scum":  "toomuchscum",
       "brothel mafia": "brothel",
       "bh": "bloodhound",
       "dv3": "dayvig3",

@@ -2,7 +2,7 @@ window.MafiaData = JSON.parse(String.raw`{
     "roles": {
       "villager": {
         "name": "Villager",
-        "id": "villager",
+        "alignment": "town",
         "image": "fx/mafia-villager.png",
         "memo": [
           "Vanilla Townie: Town player without any additional abilities."
@@ -10,14 +10,14 @@ window.MafiaData = JSON.parse(String.raw`{
       },
       "goon": {
         "name": "Goon",
-        "id": "goon",
+        "alignment": "mafia",
         "memo": [
           "Goon: Mafia player without any additional abilities."
         ]
       },
       "alien-of-all-trades": {
         "name": "Alien-of-all-Trades",
-        "id": "alienofalltrades",
+        "alignment": "alien",
         "memo": [
           "Alien-of-all-Trades: Before the game starts, you may pick another role. You will gain any powers this role has for the rest of the game."
         ]
@@ -218,7 +218,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Power Cop",
         "id": "powercop",
         "memo": [
-          "Power Cop: During the Night, you can PM the host the name of another player. They will tell you how strong that player's role is on a scale from 0 to 10."
+          "Power Cop: During the Night, you can PM the host the name of another player. You will be told how strong that player's role is on a scale from 0 to 10, as judged by the host."
         ]
       },
       "role cop": {
@@ -491,7 +491,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Halter",
         "id": "halter",
         "memo": [
-          "Halter: You can give the host a set of arbitrary roles, and the host will tell you if a setup with those roles will run indefinitely."
+          "Halter: During the night, you can give the host a set of arbitrary roles. You will be told if the setup will HALT or RUN INDEFINITELY."
         ]
       },
       "hasty lover": {
@@ -614,7 +614,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Little Liar",
         "id": "litteliar",
         "memo": [
-          "Little Liar: At any point during the game, you may PM the host to reveal you as TOWN publicly."
+          "Little Liar: At any point during the game, you may PM the host to reveal you as TOWN publicly. (Little Liars are usually scum-aligned)"
         ]
       },
       "loner": {
@@ -622,7 +622,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "id": "loner",
         "alignment": "solo",
         "memo": [
-          "Loner: You win when everyone else is dead, have no partners, and do not have a nightkill."
+          "Loner: You win when everyone else is dead. You have no partners or nightkill."
         ]
       },
       "loverboy": {
@@ -837,8 +837,7 @@ window.MafiaData = JSON.parse(String.raw`{
         ]
       },
       "pseudolyncher": {
-        "name": "Pseudojester",
-        "id": "pseudojester",
+        "name": "Pseudolyncher",
         "alignment": "solo",
         "memo": [
           "Pseudolyncher: You are only able to win if you get your target lynched. You will be aligned with the alignment of this player."
@@ -967,7 +966,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "id": "shadow",
         "alignment": "solo",
         "memo": [
-          "Shadow: Once a game at Night, you may PM the host the name of another player. You will copy any abilities this player has. Additionally, you may kill someone once each night."
+          "Shadow: You are aligned with yourself. Once a game at Night, you may PM the host the name of another player. You will copy any abilities this player has. Additionally, you may kill someone once each night."
         ]
       },
       "silencer": {
@@ -1468,7 +1467,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Hidden",
         "id": "hidden",
         "memo": [
-          "Hidden: You are now aware of this part of your role."
+          "Hidden: You are not aware of this part of your role."
         ]
       },
       "hopefuly": {
@@ -1867,7 +1866,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "name": "Supersaint",
         "id": "supersaint",
         "memo": [
-          "Supersaint: When this player is lynched, the player who placed the hammering vote dies as well.."
+          "Supersaint: When this player is lynched, the player who placed the hammering vote dies as well."
         ]
       },
       "talkative": {
@@ -2188,16 +2187,16 @@ window.MafiaData = JSON.parse(String.raw`{
         "desc": "Ace: Coordinate your shots to not lose the game! Reroll if nobody is Mafia."
       },
        "assassininthecourt": {
-        "4": "Solo Assassin, Guard, Guard, King",
-        "5": "Solo Assassin, Guard, Guard, Guard, King",
-        "6": "Solo Assassin, Guard, Guard, Guard, Guard, King",
-        "7": "Solo Assassin, Guard, Guard, Guard, Guard, Guard, King",
+        "4": "Assassin, Guard, Guard, King",
+        "5": "Assassin, Guard, Guard, Guard, King",
+        "6": "Assassin, Guard, Guard, Guard, Guard, King",
+        "7": "Assassin, Guard, Guard, Guard, Guard, Guard, King",
         "name":  "Assassin in the Court",
         "desc": "The Assassin tries to shoot the King to win! The Guards try to protect the King."
       },
       "toomuchscum": {
-        "8": "Mafia Goon, Mafia Goon, Solo Serial Killer, FBI Agent, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "12": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Solo Lyncher, Cop, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "8": "Mafia Goon, Mafia Goon, Serial Killer, FBI Agent, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "12": "Mafia Goon, Mafia Goon, Mafia Goon, Werewolf, Werewolf, Lyncher, Cop, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name":  "Too Much Scum",
         "desc":  "Too Much Scum: Find the many scum, reminiscent of the Jungle Republic setup."
       },
@@ -2207,7 +2206,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "desc": "Brothel Mafia: 6 Pretty Ladies that don't know their specific role. Some may do unexpected things like in MedMaf."
       },
       "bullethell": {
-        "5": "Mason, Mason, Solo Serial Killer, Solo Serial Killer, Solo Serial Killer",
+        "5": "Mason, Mason, Serial Killer, Serial Killer, Serial Killer",
         "name": "Bullet Hell",
         "desc": "Bullet Hell: Try to avoid all the shots at Night to win!"
       },
@@ -2272,7 +2271,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "desc": "Day-Vig3: Shoot the other Day-Vig, before they shoot you!"
       },
       "drookezismafiamafia": {
-        "5": "Drookez, Solo Traitor Lover, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "5": "Drookez, Traitor Lover, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name":  "Drookez is Mafia Mafia",
         "desc": "Drookez is Mafia Mafia: Drookez is Mafia, but try to find his Lover! Drookez must survive with his Lover to win."
       },
@@ -2370,9 +2369,9 @@ window.MafiaData = JSON.parse(String.raw`{
       "kirby": {
         "5": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "11": "Mafia Goon, Mafia Goon, Solo Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "14": "Mafia Goon, Mafia Goon, Mafia Goon, Solo Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
-        "16": "Mafia Goon, Mafia Goon, Mafia Goon, Solo One-Shot Bulletproof Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "11": "Mafia Goon, Mafia Goon, Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "14": "Mafia Goon, Mafia Goon, Mafia Goon, Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "16": "Mafia Goon, Mafia Goon, Mafia Goon, One-Shot Bulletproof Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Kirby",
         "desc": "Kirby: Decide who you think would use this power-up well, or give a bad one to your scumread. It's all up to you!"
       },
@@ -2412,7 +2411,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "desc": "Madness: The Mafia try to survive in a Power Role Mania. The Mafia Goon gains the Town role not distributed, reroll if a Mafia role wasn't given. The Bus Driver may target itself."
       },
       "masonries": {
-        "6": "Solo Traitor One-Shot Vigilante, Solo Traitor One-Shot Vigilante, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+        "6": "Traitor One-Shot Vigilante, Traitor One-Shot Vigilante, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "9": "Werewolf, Werewolf, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "12": "Werewolf, Werewolf, Werewolf, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
         "name": "Masonries",
@@ -2460,7 +2459,7 @@ window.MafiaData = JSON.parse(String.raw`{
         "desc": "Near-Vanilla: Vanilla with with a Doctor and a Jailkeeper for some spice."
       },
       "neighborsdilemma": {
-        "6": "Solo Odd-Night Serial Killer Neighbor, Solo Even-Night Serial Killer Neighbor, Town Neighbor, Town Neighbor, Town Neighbor, Town Neighbor",
+        "6": "Odd-Night Serial Killer Neighbor, Even-Night Serial Killer Neighbor, Town Neighbor, Town Neighbor, Town Neighbor, Town Neighbor",
         "name": "Neighbors Dilemma",
         "desc": "Neighbors Dilemma: A theme where you get a Neighbor, who you can privately talk to. However, they may be scum..."
       },
@@ -2726,10 +2725,10 @@ window.MafiaData = JSON.parse(String.raw`{
           "Reloader",
           "Fruit Vendor",
           "Parrot Role",
-          "Solo Judas",
-          "Solo Saulus",
-          "Solo One-Shot Townie",
-          "Solo Underdog",
+          "Judas",
+          "Saulus",
+          "One-Shot Townie",
+          "Underdog",
           "Mafia Goon",
           "Mafia Goon",
           "Mafia Goon",
@@ -2777,18 +2776,18 @@ window.MafiaData = JSON.parse(String.raw`{
           "Alien One-Shot Mass Redirector",
           "Alien Bloodsucker",
           "Alien Sympathiser",
-          "Solo Survivor",
-          "Solo Compulsive Bodyguard Survivor",
-          "Solo Survivor Mason",
-          "Solo Lyncher",
-          "Solo Lyncher",
-          "Solo Two-Shot Bulletproof Serial Killer",
-          "Solo Serial Killer (Immune to Mafia Kills)",
-          "Solo Serial Killer (Immune to Werewolf Kills)",
-          "Solo Serial Killer (Immune to Alien Kills)",
+          "Survivor",
+          "Compulsive Bodyguard Survivor",
+          "Survivor Mason",
+          "Lyncher",
+          "Lyncher",
+          "Two-Shot Bulletproof Serial Killer",
+          "Serial Killer (Immune to Mafia Kills)",
+          "Serial Killer (Immune to Werewolf Kills)",
+          "Serial Killer (Immune to Alien Kills)",
           "One-Shot Cult Recruiter",
           "One-Shot Cult Goomaker",
-          "Solo Wild Card GI"
+          "Wild Card GI"
         ],
         "picks": [
           "role"
@@ -2881,10 +2880,10 @@ window.MafiaData = JSON.parse(String.raw`{
           "Reloader",
           "Fruit Vendor",
           "Parrot Role",
-          "Solo Judas",
-          "Solo Saulus",
-          "Solo One-Shot Townie",
-          "Solo Underdog",
+          "Judas",
+          "Saulus",
+          "One-Shot Townie",
+          "Underdog",
           "Mafia Goon",
           "Mafia Goon",
           "Mafia Goon",
@@ -2932,18 +2931,18 @@ window.MafiaData = JSON.parse(String.raw`{
           "Alien One-Shot Mass Redirector",
           "Alien Bloodsucker",
           "Alien Sympathiser",
-          "Solo Survivor",
-          "Solo Compulsive Bodyguard Survivor",
-          "Solo Survivor Mason",
-          "Solo Lyncher",
-          "Solo Lyncher",
-          "Solo Two-Shot Bulletproof Serial Killer",
-          "Solo Serial Killer (Immune to Mafia Kills)",
-          "Solo Serial Killer (Immune to Werewolf Kills)",
-          "Solo Serial Killer (Immune to Alien Kills)",
+          "Survivor",
+          "Compulsive Bodyguard Survivor",
+          "Survivor Mason",
+          "Lyncher",
+          "Lyncher",
+          "Two-Shot Bulletproof Serial Killer",
+          "Serial Killer (Immune to Mafia Kills)",
+          "Serial Killer (Immune to Werewolf Kills)",
+          "Serial Killer (Immune to Alien Kills)",
           "One-Shot Cult Recruiter",
           "One-Shot Cult Goomaker",
-          "Solo Wild Card GI"
+          "Wild Card GI"
         ],
         "picks": [
           "role",
@@ -3037,10 +3036,10 @@ window.MafiaData = JSON.parse(String.raw`{
           "Reloader",
           "Fruit Vendor",
           "Parrot Role",
-          "Solo Judas",
-          "Solo Saulus",
-          "Solo One-Shot Townie",
-          "Solo Underdog",
+          "Judas",
+          "Saulus",
+          "One-Shot Townie",
+          "Underdog",
           "Mafia Goon",
           "Mafia Goon",
           "Mafia Goon",
@@ -3088,18 +3087,18 @@ window.MafiaData = JSON.parse(String.raw`{
           "Replicant Day Suicide Bomber",
           "Bulletproof Replicant",
           "Replicant Sympathiser",
-          "Solo Survivor",
-          "Solo Compulsive Bodyguard Survivor",
-          "Solo Survivor Mason",
-          "Solo Lyncher",
-          "Solo Lyncher",
-          "Solo Two-Shot Bulletproof Serial Killer",
-          "Solo Serial Killer (Immune to Mafia Kills)",
-          "Solo Serial Killer (Immune to Werewolf Kills)",
-          "Solo Serial Killer (Immune to Alien Kills)",
+          "Survivor",
+          "Compulsive Bodyguard Survivor",
+          "Survivor Mason",
+          "Lyncher",
+          "Lyncher",
+          "Two-Shot Bulletproof Serial Killer",
+          "Serial Killer (Immune to Mafia Kills)",
+          "Serial Killer (Immune to Werewolf Kills)",
+          "Serial Killer (Immune to Alien Kills)",
           "One-Shot Cult Recruiter",
           "One-Shot Cult Goomaker",
-          "Solo Wild Card GI"
+          "Wild Card GI"
         ],
         "picks": [
           "role"
@@ -3242,22 +3241,22 @@ window.MafiaData = JSON.parse(String.raw`{
           "Cult",
           "Cult",
           "Cult",
-          "Solo Serial Killer",
-          "Solo Serial Killer",
-          "Solo Serial Killer",
-          "Solo Serial Killer",
-          "Solo Serial Killer",
-          "Solo Survivor",
-          "Solo Survivor",
-          "Solo Jester",
-          "Solo Unjester",
-          "Solo Lyncher",
-          "Solo Unlyncher",
-          "Solo Underdog",
-          "Solo Aligner",
-          "Solo Universal Usurper",
-          "Solo Universal Sympathiser",
-          "Solo Wild Card GI"
+          "Serial Killer",
+          "Serial Killer",
+          "Serial Killer",
+          "Serial Killer",
+          "Serial Killer",
+          "Survivor",
+          "Survivor",
+          "Jester",
+          "Unjester",
+          "Lyncher",
+          "Unlyncher",
+          "Underdog",
+          "Aligner",
+          "Universal Usurper",
+          "Universal Sympathiser",
+          "Wild Card GI"
         ],
         "picks": [
           "role"
@@ -3345,7 +3344,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Mafia Tracker",
           "Mafia One-Shot Role Cop",
           "Mafia One-Shot Role Cop",
-          "Solo Traitor Cop",
+          "Traitor Cop",
           "Mafia Conspiracy Theorist",
           "Mafia Conspiracy Theorist",
           "Mafia Clairvoyant",
@@ -3361,8 +3360,8 @@ window.MafiaData = JSON.parse(String.raw`{
           "Alien Monarch",
           "Baby Alien Monarch",
           "Baby Alien Monarch",
-          "Solo Lyncher",
-          "Solo Pseudojester",
+          "Lyncher",
+          "Pseudojester",
           "Red Goo CI",
           "Red Goo CI",
           "Grey Goo CI",
@@ -3539,7 +3538,7 @@ window.MafiaData = JSON.parse(String.raw`{
           "Sacrifice",
           "Sacrifice",
           "Magician",
-          "Solo Flip Flop",
+          "Flip Flop",
           "Mafia Hater",
           "Mafia Praiser",
           "Mafia One-Shot Day-Vigilante",
@@ -3576,14 +3575,14 @@ window.MafiaData = JSON.parse(String.raw`{
           "Mafia Friend",
           "Mafia Friend",
           "Mafia Friend",
-          "Solo Traitor Discard Vendor",
-          "Solo Traitor Pseudocider",
-          "Solo Traitor Celebrity",
-          "Solo Traitor Gossiper",
-          "Solo Traitor Broken Vanillaiser",
-          "Solo Traitor OS Subway Recruiter",
-          "Solo Traitor Hasty Lover",
-          "Solo Talkative Traitor",
+          "Traitor Discard Vendor",
+          "Traitor Pseudocider",
+          "Traitor Celebrity",
+          "Traitor Gossiper",
+          "Traitor Broken Vanillaiser",
+          "Traitor OS Subway Recruiter",
+          "Traitor Hasty Lover",
+          "Talkative Traitor",
           "Alien Contrary",
           "Alien Contrary",
           "Alien Friend",
@@ -3600,31 +3599,31 @@ window.MafiaData = JSON.parse(String.raw`{
           "Alien Judge",
           "Alien OS Trainwreck",
           "Alien OS Solar God",
-          "Alien Alien-of-all-Trades",
+          "Alien-of-all-Trades",
           "Alien Omniscient",
-          "Solo E.T",
+          "E.T",
           "Cultafia Leader",
           "Gambit Cult Recruiter",
-          "Solo Inquisitor",
-          "Solo Bulletproof Duskiller",
-          "Solo Bulletproof Corrupt Queen",
-          "Solo Substitute Loner",
-          "Solo Substitute Loner",
-          "Solo Bulletproof Shadow",
+          "Inquisitor",
+          "Bulletproof Duskiller",
+          "Bulletproof Corrupt Queen",
+          "Substitute Loner",
+          "Substitute Loner",
+          "Bulletproof Shadow",
           "Solo Panther",
-          "Solo Survivor Hallucinator",
-          "Solo Survivor Pseudocider",
-          "Solo Aligner",
-          "Solo Aligner",
-          "Solo Loyal Lover",
-          "Solo Survivor Friend",
-          "Solo Pseudojester",
-          "Solo Pseudolyncher",
-          "Solo Birthday Boy",
-          "Solo Universal Usurper",
-          "Solo Universal Sympathiser",
-          "Solo Anti-Survivor",
-          "Solo Wild disCard"
+          "Survivor Hallucinator",
+          "Survivor Pseudocider",
+          "Aligner",
+          "Aligner",
+          "Loyal Lover",
+          "Survivor Friend",
+          "Pseudojester",
+          "Pseudolyncher",
+          "Birthday Boy",
+          "Universal Usurper",
+          "Universal Sympathiser",
+          "Anti-Survivor",
+          "Wild disCard"
         ],
         "picks": [
           "role"

@@ -643,7 +643,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Nurse: When a Doctor dies, you will become a Doctor instead."
       ],
-      "image": "mafia-doctor"
+      "image": "doctor"
     },
     "nymphomaniac": {
       "name": "Nymphomaniac",
@@ -799,7 +799,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Rolestopper: Each night you can PM the host the name of another player. All other actions on this player will fail, excluding kills."
       ],
-      "image": "mafia-doctor"
+      "image": "doctor"
     },
     "saulus": {
       "name": "Saulus",
@@ -832,7 +832,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Seraph Knight: Once a game, you may PM the host the name of another player at night. This player will not be able to be killed at night until you die."
       ],
-      "image": "mafia-doctor"
+      "image": "doctor"
     },
     "serialkiller": {
       "name": "Serial Killer",

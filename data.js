@@ -643,7 +643,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Nurse: When a Doctor dies, you will become a Doctor instead."
       ],
-      "image": "doctor"
+      "image": "mafia-doctor"
     },
     "nymphomaniac": {
       "name": "Nymphomaniac",
@@ -799,7 +799,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Rolestopper: Each night you can PM the host the name of another player. All other actions on this player will fail, excluding kills."
       ],
-      "image": "doctor"
+      "image": "mafia-doctor"
     },
     "saulus": {
       "name": "Saulus",
@@ -832,7 +832,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Seraph Knight: Once a game, you may PM the host the name of another player at night. This player will not be able to be killed at night until you die."
       ],
-      "image": "doctor"
+      "image": "mafia-doctor"
     },
     "serialkiller": {
       "name": "Serial Killer",
@@ -1618,7 +1618,7 @@ window.MafiaData = JSON.parse(String.raw`{
     "supersaint": {
       "name": "Supersaint",
       "memo": [
-        "Supersaint: When this player is lynched, the player who placed the hammering vote dies as well."
+        "Supersaint: When this player is lynched by a majority vote, the player who placed the hammering vote dies as well."
       ]
     },
     "talkative": {
@@ -1746,6 +1746,44 @@ window.MafiaData = JSON.parse(String.raw`{
       "memo": [
         "Yellow Goo: Whenever someone targets you with an action, they lose the ability to use that action and you gain it. This even affects factional actions. That member of the faction can no longer perform that action. Other members of the faction can still perform it."
       ]
+    },
+    "dragoon": {
+      "name": "Dragoon",
+      "memo": [
+        "Dragoon: You win if you are one of the last 3 players alive. Has no factional kill but compulsively says one anonymous message each night, through the host."
+      ],
+      "alignment": "solo"
+    },
+    "houdini": {
+      "name": "Houdini",
+      "memo": [
+        "Houdini: Once a game, you can switch someone’s role with their discarded role. Their alignment doesn’t change."
+      ]
+    },
+    "panther": {
+      "name": "Panther",
+      "memo": [
+        "Panther: Target someone at night. They become Voteless the next day and the Panther becomes a Mayor."
+      ],
+      "alignment": "solo"
+    },
+    "amnesiac": {
+      "name": "Amnesiac",
+      "memo": [
+        "Amnesiac: Another player will receive the results of your inspections."
+      ]
+    },
+    "hated": {
+      "name": "Hated",
+      "memo": [
+        "Hated: You take 1 less vote to be hammered."
+      ]
+    },
+    "loved": {
+      "name": "Loved",
+      "memo": [
+        "Loved: You take 1 more vote to be hammered."
+      ]
     }
   },
   "alignments": {
@@ -1764,9 +1802,9 @@ window.MafiaData = JSON.parse(String.raw`{
       "plural": "Mafia",
       "color": "#F00",
       "memo": [
-        "Factional Communication: If there are other aligned players, you may PM them during the game.",
+        "Factional Communication: If there are other Mafia-aligned players, you may PM them during the game.",
         "Factional Kill: The Mafia may kill one player per night.",
-        "You are aligned with the <span style=\"color:#F00;font-weight:bold\">Mafia</span>. You win when all players without a Mafia wincon are eliminated and at least one aligned player is still alive (or nothing can prevent the same)."
+        "You are aligned with the <span style=\"color:#F00;font-weight:bold\">Mafia</span>. You win when all players without a Mafia wincon are eliminated and at least one Mafia-aligned player is still alive (or nothing can prevent the same)."
       ],
       "image": "mafia"
     },
@@ -2079,6 +2117,24 @@ window.MafiaData = JSON.parse(String.raw`{
       "name": "Kill All Townies",
       "desc": "Kill All Townies: The more Town deaths, the more days! For each Town role's death at Night, there's a Day."
     },
+    "kingofthehill": {
+      "7": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "8": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "10": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "11": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "12": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "14": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "16": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "17": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "18": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "19": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "20": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "King of the Hill",
+      "desc": "At the start, the players vote for a King, who decides a lynch. Every day after, the King can either be challenged."
+    },
     "kidswithguns": {
       "8": "Mafia Suicide Bomber, Mafia Goon, One-Shot Vigilante, Innocent Child, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
       "name": "Kids With Guns",
@@ -2092,6 +2148,24 @@ window.MafiaData = JSON.parse(String.raw`{
       "16": "Mafia Goon, Mafia Goon, Mafia Goon, One-Shot Bulletproof Serial Killer, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
       "name": "Kirby",
       "desc": "Kirby: Decide who you think would use this power-up well, or give a bad one to your scumread. It's all up to you!"
+    },
+    "lastwillmafia": {
+      "7": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "8": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "10": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "11": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "12": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "14": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "16": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "17": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "18": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "19": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "20": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Last Will Mafia",
+      "desc": "When someone is lynched, they die. But they also select another player that can perform a nightkill! Mafia does not have its factional kill."
     },
     "lesspressure": {
       "8": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Innocent Child, Innocent Child",
@@ -2222,6 +2296,7 @@ window.MafiaData = JSON.parse(String.raw`{
       "desc": "Paris Mafia: Watch out for the Mimes who try to get lynched!"
     },
     "popcorn": {
+      "6": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
       "11": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
       "18": "Vengeful Mafia, Vengeful Mafia, Vengeful Mafia, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
       "name": "Popcorn",
@@ -2254,10 +2329,36 @@ window.MafiaData = JSON.parse(String.raw`{
       "name": "Pygmee",
       "desc": "Pygmee: An Outside-Contact theme based around switching locations. You'll have to communicate to win, but who is worth your trust?"
     },
+    "redflag": {
+      "11": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "17": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Red Flag",
+      "desc": "Lynch 2 Mafia to win!"
+    },
     "sacrifice": {
       "4": "Mafia Sacrifice, Mafia Sacrifice, Vanilla Townie, Vanilla Townie",
       "name": "Sacrifice",
       "desc": "Sacrifice: The Vanilla Townies can't die until a Mafia Sacrifice has died. Use this to clear them!"
+    },
+    "safehouse": {
+      "7": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "8": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "10": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "11": "Mafia Goon, Mafia Goon, Traitor, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "12": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "14": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Traitor, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "16": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "17": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "18": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "19": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Traitor, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "20": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Safehouse",
+      "desc": "Safehouse: The world is ending, nearly everyone will die. Select the few people who can be sent to the Safehouse, only they will survive!"
     },
     "seminightless": {
       "11": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
@@ -2354,6 +2455,110 @@ window.MafiaData = JSON.parse(String.raw`{
       "4": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie",
       "name": "We Need a Fifth",
       "desc": "We Need a Fifth: When a Vanilla Townie is lynched Day 1, they shoot another player instead. When a Mafia Goon is lynched, they have to clear a Vanilla Townie."
+    },
+    "8ball": {
+      "8": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "8-ball",
+      "desc": "8-ball: Mafia has no nightkills, but between every day, they select a player to be the 8-Ball. If that player is lynched, Mafia does get a kill!"
+    },
+    "blackflagnightless": {
+      "10": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Black Flag Nightless",
+      "desc": "Black Flag Nightless: A nightless theme that uses a modified White Flag mechanic that applies to both factions: Town loses if reduced to 3 members, Mafia if reduced to 1 member!"
+    },
+    "antinommy": {
+      "7": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "11": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "19": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Antinommy",
+      "desc": "Antinommy: Nightless. Every even day, Mafia selects 3 Kings. Only those 3 people can vote that day."
+    },
+    "contagioninthepalace": {
+      "6": "Assassin, King, Guard, Guard, Guard, Guard",
+      "name": "Contagion in the Palace",
+      "desc": "Contagion in the Palace: Variant of AITC. When you get lynched, you pass on an infectious disease! Assassin tries to infect the king to win."
+    },
+    "cultshot": {
+      "6": "Cult Recuiter, Vigilante, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Cultshot",
+      "desc": "Cultshot: A 6p theme with a Cult Recruiter."
+    },
+    "deathnommy": {
+      "4": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "5": "Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "6": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "7": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "8": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "10": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "11": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "12": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "14": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "15": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "16": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "17": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "18": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "19": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "20": "Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Deathnommy",
+      "desc": "Deathnommy: Nightless. When someone is lynched, they can nominate 3 players. Only those 3 people can be lynched the next day."
+    },
+    "desperationday": {
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Desperation Day",
+      "desc": "Desperation Day: If Mafia is lynched on day 3, the game ends and Town wins!"
+    },
+    "empking": {
+      "5": "Mafia Goon, Mafia Goon, OS Publishing Cop, Vanilla Townie, Vanilla Townie",
+      "name": "Empking",
+      "desc": "Empking: Mafia only kills on even nights. OS Public cop publicly reveals 1 role."
+    },
+    "enemyofmyenemy": {
+      "13": "Mafia Amnesic Seer,Mafia Goon,Werewolf Amnesic Cop,Werewolf, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Enemy of my Enemy",
+      "desc": "Enemy of my Enemy: A  multiball theme where scum inspects for the other factions with a twist!"
+    },
+    "friendsandenemies": {
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Mason, Mason, Mason, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Friends and Enemies",
+      "desc": "Friends and Enemies: A theme centered around Masons."
+    },
+    "friendsandenemiesandenemiesandthatotherguy": {
+      "11": "Mafia Goon, Mafia Goon, Werewolf, Werewolf, Mason, Mason, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Friends and Enemies and Enemies and That Other Guy",
+      "desc": "FEETOG: A multiball theme that features Backup Mason."
+    },
+    "greyflagnightless": {
+      "9": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Grey Flag Nightless",
+      "desc": "Grey Flag Nightless: Nightless. Lynch 2 Mafia to win!"
+    },
+    "masonsandmonks": {
+      "13": "Mafia Goon, Mafia Goon, Werewolf, Werewolf, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Masons and Monks",
+      "desc": "Masons and Monks: 2 random people who aren't mafia become Mason, 2 people who aren't Werewolf become Monk"
+    },
+    "thinktwice": {
+      "5": "Mafia Goon, Mafia Godfather, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Think Twice",
+      "desc": "Nightless. If Town is lynched Day 1, their death is postponed and they die after Day 2. If Mafia Godfather is lynched, Town wins. Before lynching someone, think twice!"
+    },
+    "vengeball": {
+      "9": "Mafia Goon, Mafia Godfather, Werewolf, Alpha Werewolf, Vengeful Townie, Vengeful Townie, Vengeful Townie, Vengeful Townie, Vengeful Townie",
+      "name": "Vengeball",
+      "desc": "If Mafia Godfather or Alpha Werewolf is lynched, their partner dies with them. No vengeful shots in lylo."
+    },
+    "votefortownmafia": {
+      "9": "Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "Vote for Town Mafia",
+      "desc": "Mafia wins if they are all lynched. Town wins if they reach equal numbers with the Mafia."
+    },
+    "whiteflag": {
+      "13": "Mafia Goon, Mafia Goon, Mafia Goon, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie, Vanilla Townie",
+      "name": "White Flag",
+      "desc": "Lynch 2 mafia to win!"
     }
   },
   "IDEAs": {
@@ -3727,276 +3932,493 @@ window.MafiaData = JSON.parse(String.raw`{
       "choices": 2
     }
   },
-  "terms": {},
+  "terms": {
+    "bastard": {
+      "name": "Bastard",
+      "memo": [
+        "Any kind of role may be in this setup, and the host may lie to the players."
+      ]
+    },
+    "bussing": {
+      "name": "Bussing",
+      "memo": [
+        "A scum player lynching or scumreading their partner to appear town."
+      ]
+    },
+    "bandwagon": {
+      "name": "Bandwagon",
+      "memo": [
+        "A group of people following a lynch or thought."
+      ]
+    },
+    "counter_claim": {
+      "name": "Counter Claim",
+      "memo": [
+        "When someone claims a role, in response of someone else claiming that role (of which there's usually only one left in the game)."
+      ]
+    },
+    "definite_majority": {
+      "name": "Definite Majority",
+      "memo": [
+        "The day only ends when hammer is reached."
+      ]
+    },
+    "dilemma": {
+      "name": "Dilemma",
+      "memo": [
+        "When town can only win by No Lynching and hoping the Anti-Town factions kill each other."
+      ]
+    },
+    "filler": {
+      "name": "Filler",
+      "memo": [
+        "Excessive talk about things that are not related or important to the game."
+      ]
+    },
+    "finger_of_suspect": {
+      "name": "Finger of Suspect",
+      "memo": [
+        "Pointing out that you scumread someone."
+      ]
+    },
+    "hammer": {
+      "name": "Hammer",
+      "memo": [
+        "The amount of votes needed to have a majority of players lynching someone."
+      ]
+    },
+    "hypo": {
+      "name": "Hypo",
+      "memo": [
+        "When everyone claims what they would've done if they were a specific role. This is done to not out the power role, but that Town still has access to their actions or results in case they die."
+      ]
+    },
+    "l-x": {
+      "name": "L-x",
+      "memo": [
+        "When a player is a specific amount of votes (x) away from hammer."
+      ]
+    },
+    "lurking": {
+      "name": "Lurking",
+      "memo": [
+        "When someone is purposefully not talking in the chat, even while they're there."
+      ]
+    },
+    "lylo": {
+      "name": "LyLo",
+      "memo": [
+        "If the wrong player is lynched today, or nobody is lynched, town loses."
+      ]
+    },
+    "majority": {
+      "name": "Majority",
+      "memo": [
+        "If no hammer is reached at the deadline, no one is lynched."
+      ]
+    },
+    "majnox": {
+      "name": "MajNoX",
+      "memo": [
+        "Majority, without any extensions."
+      ]
+    },
+    "modified_plurality": {
+      "name": "Modified Plurality",
+      "memo": [
+        "Plurality, but if a certain amount of votes isn't reached at the deadline, no one is lynched."
+      ]
+    },
+    "mylo": {
+      "name": "MyLo",
+      "memo": [
+        "If the wrong player is lynched today, town loses."
+      ]
+    },
+    "nullread": {
+      "name": "Nullread",
+      "memo": [
+        "A player who you don't know whether they're Town or not."
+      ]
+    },
+    "omgus": {
+      "name": "OMGUS",
+      "memo": [
+        "Accusing someone solely because they accused you."
+      ]
+    },
+    "plop": {
+      "name": "PLOP",
+      "memo": [
+        "\"Pretty Lady Over-Powered\", using the Pretty Lady (protected by a Doctor) to find solo scum, by judging whether the Nightkill went through."
+      ]
+    },
+    "plurality": {
+      "name": "Plurality",
+      "memo": [
+        "If the deadline is reached, the player with the most votes will be lynched."
+      ]
+    },
+    "plurnox": {
+      "name": "PlurNoX",
+      "memo": [
+        "Plurality, without any extensions."
+      ]
+    },
+    "plylo": {
+      "name": "PLyLo",
+      "memo": [
+        "\"Potential LyLo\", there's a chance but it's not definite that if the wrong person, or No Lynch is lynched, town loses."
+      ]
+    },
+    "pmylo": {
+      "name": "PMyLo",
+      "memo": [
+        "\"Potential MyLo\", there's a chance but it's not definite that if the wrong person is lynched, town loses."
+      ]
+    },
+    "quickhammer": {
+      "name": "Quickhammer",
+      "memo": [
+        "When all of the Mafia quickly lynch someone, to reach hammer and cause a Mafia win."
+      ]
+    },
+    "scorched_earth": {
+      "name": "Scorched Earth",
+      "memo": [
+        "When no players are left alive."
+      ]
+    },
+    "scumread": {
+      "name": "Scumread",
+      "memo": [
+        "A player who you think is not aligned with the Town."
+      ]
+    },
+    "snaq_bastard": {
+      "name": "Snaq Bastard",
+      "memo": [
+        "Any role can be in the game, excluding Hidden or False ones. The host will not lie to the players."
+      ]
+    },
+    "townread": {
+      "name": "Townread",
+      "memo": [
+        "A player who you think is aligned with the Town."
+      ]
+    },
+    "tunnel": {
+      "name": "Tunnel",
+      "memo": [
+        "When a player is convinced another player is scum, and will consider anything the player does scummy."
+      ]
+    },
+    "wifom": {
+      "name": "WIFOM",
+      "memo": [
+        "\"Wine In Front Of Me\", the circular reasoning that Mafia could've anticipated something, and did it because of that."
+      ]
+    },
+    "chinesefiredrill": {
+      "name": "Chinese Fire Drill",
+      "memo": [
+        "When the players quickly shift votes en masse from one player onto another, at the very end of a day."
+      ]
+    },
+    "counterwagon": {
+      "name": "Counterwagon",
+      "memo": [
+        "A series of lynches made on one player with the intent of keeping another player from being lynched."
+      ]
+    },
+    "crosslynch": {
+      "name": "Crosslynch",
+      "memo": [
+        "Voting one person with the expectation that they will reciprocate the vote. Especially common during lylo, but sometimes used to condense town's voting options."
+      ]
+    },
+    "firedrill": {
+      "name": "Fire Drill",
+      "memo": [
+        "Quickly shifting votes en masse from one player onto another."
+      ]
+    },
+    "lolhammer": {
+      "name": "Lolhammer",
+      "memo": [
+        "A hammer that is made prematurely and with no warning."
+      ]
+    },
+    "multiballslip": {
+      "name": "Multiball Slip",
+      "memo": [
+        "When there are multiple factions, and scum forgets that it's possible to other people that they are from the other scumfaction."
+      ]
+    },
+    "park": {
+      "name": "Park",
+      "memo": [
+        "Leaving a vote on someone with no intention of shifting."
+      ]
+    },
+    "policy": {
+      "name": "Policy",
+      "memo": [
+        "Voting a player out due to a behavior that is generally perceived as anti-town, with no regard for that player’s alignment."
+      ]
+    },
+    "potato": {
+      "name": "Potato",
+      "memo": [
+        "Town that doesn't do anything to help town. (Use your vote!)"
+      ]
+    },
+    "randomvotingstage": {
+      "name": "Random Voting Stage",
+      "memo": [
+        "When town, due to a lack of information at the start of a game, randomly lynches someone with little to no legitimate reads or evidences to back the lynch, in order to put people in a readable situation."
+      ]
+    },
+    "scum": {
+      "name": "Scum",
+      "memo": [
+        "Someone with a win condition contradictory to Town (the Majority)'s Wincondition."
+      ]
+    },
+    "scumlean": {
+      "name": "Scumlean",
+      "memo": [
+        "A player you feel is not aligned with Town, with less certainty than a Scumread."
+      ]
+    },
+    "sheeping": {
+      "name": "Sheeping",
+      "memo": [
+        "Following another player's/group of players’ vote, without fully understanding the reasoning behind it."
+      ]
+    },
+    "soft": {
+      "name": "Soft",
+      "memo": [
+        "Dropping a subtle hint towards your role, that will not be recognized unless you analyze its meaning."
+      ]
+    },
+    "townlean": {
+      "name": "Townlean",
+      "memo": [
+        "A player you feel is aligned with Town, with less certainty than a Townread."
+      ]
+    },
+    "turbo": {
+      "name": "Turbo",
+      "memo": [
+        "Quickly building a wagon on one player, typically with the aim of preventing discussion."
+      ]
+    },
+    "vanitywagon": {
+      "name": "Vanity Wagon",
+      "memo": [
+        "A wagon consisting of a single vote, generally not expected to gain any support."
+      ]
+    },
+    "wagonomics": {
+      "name": "Wagonomics",
+      "memo": [
+        "Reading players’ voting histories to look for possible clues as to their alignment / check for partners."
+      ]
+    }
+  },
   "aliases": {
-    "assassininthecourt": {
-      "name": "assassin in the court"
-    },
-    "toomuchscum": {
-      "name": "too much scum"
-    },
-    "brothel": {
-      "name": "brothel"
-    },
-    "bloodhound": {
-      "name": "bloodhound"
-    },
-    "dayvig3": {
-      "name": "day-vig3"
-    },
-    "drookezismafiamafia": {
-      "name": "drookez is mafia mafia"
-    },
-    "friendsandenemiesandenemies": {
-      "name": "friends and enemies and enemies"
-    },
-    "forestfire": {
-      "name": "forest fire"
-    },
-    "fireandice": {
-      "name": "fire and ice"
-    },
-    "jungleofbullshit": {
-      "name": "jungle of bullshit"
-    },
-    "killalltownies": {
-      "name": "kill all townies"
-    },
-    "kidswithguns": {
-      "name": "kids with guns"
-    },
-    "lifeordeath": {
-      "name": "life or death"
-    },
-    "lighthouse": {
-      "name": "lighthouse"
-    },
-    "madness": {
-      "name": "madness"
-    },
-    "maintaininglaworderandshallowrelationships": {
-      "name": "maintaining law order and shallow relationships"
-    },
-    "medicalmafia": {
-      "name": "medical mafia"
-    },
-    "minesweeper": {
-      "name": "minesweeper"
-    },
-    "modifiedexecution": {
-      "name": "modified execution"
-    },
-    "nearvanilla": {
-      "name": "near vanilla"
-    },
-    "neighborsdilemma": {
-      "name": "neighbors dilemma"
-    },
-    "nominations": {
-      "name": "nominations"
-    },
-    "pairings": {
-      "name": "pairings"
-    },
-    "parismafia": {
-      "name": "paris mafia"
-    },
-    "seminightless": {
-      "name": "semi-nightless"
-    },
-    "ss2": {
-      "name": "ss2"
-    },
-    "ss3": {
-      "name": "ss3"
-    },
-    "theoneicannotkill": {
-      "name": "the one i cannot kill"
-    },
-    "vanilla": {
-      "name": "vanilla"
-    },
-    "weneedaclear": {
-      "name": "we need a clear"
-    },
-    "weneedafifth": {
-      "name": "we need a fifth"
-    },
-    "greateridea": {
-      "name": "greater idea"
-    },
-    "greatestidea": {
-      "name": "greatest idea"
-    },
-    "replicantgreateridea": {
-      "name": "replicant greater idea"
-    },
-    "vanillaidea": {
-      "name": "vanilla idea"
-    },
-    "crackingidea": {
-      "name": "cracking idea"
-    },
-    "snaqsidea": {
-      "name": "snaqs idea"
-    },
-    "villager": {
-      "name": "villager"
-    },
-    "alienofalltrades": {
-      "name": "alien-of-all-trades"
-    },
-    "antisurvivor": {
-      "name": "anti-survivor"
-    },
-    "area51detective": {
-      "name": "area 51 detective"
-    },
-    "area51immunologist": {
-      "name": "area 51 immunologist"
-    },
-    "bodyguard": {
-      "name": "bodyguard"
-    },
-    "deputy": {
-      "name": "deputy"
-    },
-    "rolecopclassic": {
-      "name": "role cop classic"
-    },
-    "copofalltrades": {
-      "name": "cop-of-all-trades"
-    },
-    "coronereternalsun": {
-      "name": "coroner eternal sun"
-    },
-    "coronercrackingidea": {
-      "name": "coroner cracking idea"
-    },
-    "nurse": {
-      "name": "nurse"
-    },
-    "doctor": {
-      "name": "doctor"
-    },
-    "doityourselfer": {
-      "name": "do-it-yourselfer"
-    },
-    "drookez": {
-      "name": "drookez"
-    },
-    "flipflop": {
-      "name": "flip flop"
-    },
-    "greygoo": {
-      "name": "grey goo"
-    },
-    "greygoocrackingidea": {
-      "name": "grey goo cracking idea"
-    },
-    "innocentchild": {
-      "name": "innocent child"
-    },
-    "jackofalltrades": {
-      "name": "jack-of-all-trades"
-    },
-    "jailkeeper": {
-      "name": "jailkeeper"
-    },
-    "lure": {
-      "name": "lure"
-    },
-    "oraclesnaqsidea": {
-      "name": "oracle snaqs idea"
-    },
-    "parrotrole": {
-      "name": "parrot role"
-    },
-    "prettylady": {
-      "name": "pretty lady"
-    },
-    "privateinvestigator": {
-      "name": "private investigator"
-    },
-    "psychomagnet": {
-      "name": "psychomagnet"
-    },
-    "redgoocrackingidea": {
-      "name": "red goo cracking idea"
-    },
-    "rolevanillaiser": {
-      "name": "role vanillaiser"
-    },
-    "rolestopper": {
-      "name": "rolestopper"
-    },
-    "serialkiller": {
-      "name": "serial killer"
-    },
-    "silencergreateridea": {
-      "name": "silencer greater idea"
-    },
-    "suicidebomber": {
-      "name": "suicide bomber"
-    },
-    "super": {
-      "name": "super"
-    },
-    "tallier": {
-      "name": "tallier"
-    },
-    "vigilante": {
-      "name": "vigilante"
-    },
-    "wildcardgreateridea": {
-      "name": "wild card greater idea"
-    },
-    "bulletproof": {
-      "name": "bulletproof"
-    },
-    "compulsivechildkiller": {
-      "name": "compulsive child killer"
-    },
-    "excellentsenseofsmell": {
-      "name": "excellent sense of smell"
-    },
-    "immobileparrot": {
-      "name": "immobile parrot"
-    },
-    "mayor": {
-      "name": "mayor"
-    },
-    "night": {
-      "name": "night"
-    },
-    "paranoidgunowner": {
-      "name": "paranoid gun owner"
-    },
-    "postrestriction": {
-      "name": "post restriction"
-    },
-    "public": {
-      "name": "public"
-    },
-    "strongwilled": {
-      "name": "strong-willed"
-    },
-    "supersaint": {
-      "name": "supersaint"
-    },
-    "ugly": {
-      "name": "ugly"
-    },
-    "universalbackup": {
-      "name": "universal backup"
-    },
-    "unlynchable": {
-      "name": "unlynchable"
-    },
+    "aitc": "assassininthecourt",
+    "aitp": "assassininthecourt",
+    "assassininthecastle": "assassininthecourt",
+    "assassininthepalace": "assassininthecourt",
+    "tms": "toomuchscum",
+    "btms": "toomuchscum",
+    "babytoomuchscum": "toomuchscum",
+    "brothelmafia": "brothel",
+    "bh": "bloodhound",
+    "dv3": "dayvig3",
+    "dimm": "drookezismafiamafia",
+    "fee": "friendsandenemiesandenemies",
+    "ff": "forestfire",
+    "fi": "fireandice",
+    "fireice": "fireandice",
+    "job": "jungleofbullshit",
+    "kat": "killalltownies",
+    "kwg": "kidswithguns",
+    "lod": "lifeordeath",
+    "lod6": "lifeordeath",
+    "lh": "lighthouse",
+    "madnessos": "madness",
+    "mlosr": "maintaininglaworderandshallowrelationships",
+    "medmaf": "medicalmafia",
+    "bombos": "minesweeper",
+    "execution": "modifiedexecution",
+    "modexe": "modifiedexecution",
+    "nearvanilla": "nearvanilla",
+    "nd": "neighborsdilemma",
+    "nommy": "nominations",
+    "nomination": "nominations",
+    "pairs": "pairings",
+    "paris": "parismafia",
+    "seminightless": "seminightless",
+    "ss2": "supersaint2",
+    "ss3": "supersaint3",
+    "semipriest": "theoneicannotkill",
+    "nilla": "vanilla",
+    "wnac": "weneedaclear",
+    "wnaf": "weneedafifth",
+    "gi": "greateridea",
+    "gesti": "greatestidea",
+    "rgi": "replicantgreateridea",
+    "vi": "vanillaidea",
+    "ci": "crackingidea",
+    "si": "snaqsidea",
+    "vt": "villager",
+    "vanillatownie": "villager",
+    "vanillager": "villager",
+    "villy": "villager",
+    "townie": "villager",
+    "aoat": "alienofalltrades",
+    "alienofalltrades": "alienofalltrades",
+    "antisurvivor": "antisurvivor",
+    "area51detective": "area51detective",
+    "area51immunologist": "area51immunologist",
+    "bg": "bodyguard",
+    "backupcop": "deputy",
+    "rolecopclassic": "rolecopclassic",
+    "coat": "copofalltrades",
+    "copofalltrades": "copofalltrades",
+    "coroner": "coronereternalsun",
+    "coroneresun": "coronereternalsun",
+    "coronereternalsun": "coronereternalsun",
+    "coronerci": "coronercrackingidea",
+    "coronercrackingidea": "coronercrackingidea",
+    "backupdoctor": "nurse",
+    "doc": "doctor",
+    "diyer": "doityourselfer",
+    "doityourselfer": "doityourselfer",
+    "deathproofmafiaschildlover": "drookez",
+    "flipflop": "flipflop",
+    "graygoo": "greygoo",
+    "graygooci": "greygoocrackingidea",
+    "graygoocrackingidea": "greygoocrackingidea",
+    "greygooci": "greygoocrackingidea",
+    "greygoocrackingidea": "greygoocrackingidea",
+    "child": "innocentchild",
+    "joat": "jackofalltrades",
+    "jackofalltrades": "jackofalltrades",
+    "jk": "jailkeeper",
+    "stripper": "lure",
+    "oraclesi": "oraclesi",
+    "oraclesnaqsidea": "oraclesi",
+    "parrot": "parrotrole",
+    "wereparrot": "parrotrole",
+    "hooker": "prettylady",
+    "pl": "prettylady",
+    "pi": "privateinvestigator",
+    "massredirector": "psychomagnet",
+    "redgooci": "redgoocrackingidea",
+    "redgoocrackingidea": "redgoocrackingidea",
+    "rolevanillaizer": "rolevanillaiser",
+    "suppressor": "rolestopper",
+    "sk": "serialkiller",
+    "silencergi": "silencergreateridea",
+    "silencergreateridea": "silencergreateridea",
+    "kamikazepilot": "suicidebomber",
+    "supertownie": "super",
+    "sensor": "tallier",
+    "vig": "vigilante",
+    "wildcardgi": "wildcardgreateridea",
+    "wildcardgreateridea": "wildcardgreateridea",
+    "bp": "bulletproof",
+    "cck": "compulsivechildkiller",
+    "excellentsenseofsmelltownie": "excellentsenseofsmell",
+    "immobileosparrot": "immobileparrot",
+    "doublevoter": "mayor",
+    "midnight": "night",
+    "reflexivevigilante": "paranoidgunowner",
+    "pgo": "paranoidgunowner",
+    "restriction": "postrestriction",
+    "publishing": "public",
+    "strongwilled": "strongwilled",
+    "avenger": "supersaint",
+    "ss": "supersaint",
+    "uglytownie": "ugly",
+    "unibackup": "universalbackup",
+    "lynchproof": "unlynchable",  
     "101ways": "101waystoplaywithathirdparty",
     "bma": "basicmafiaandaliens",
     "bts": "basictwoscum",
     "classi": "classicidea",
-    "lad": "lifeanddeath"
+    "lad": "lifeanddeath",
+    "fv": "fruitvendor",
+    "bpduskkiller": "duskiller",
+    "duskkiller": "duskiller",
+    "bpduskiller": "duskiller",
+    "bulletproofduskiller": "duskiller",
+    "ic": "innocentchild",
+    "mafialittleliar": "littleliar",
+    "mll": "littleliar",
+    "praised": "loved",
+    "wpatwtt": "wrongplaceatthewrongtime",
+    "wpatwt": "wrongplaceatthewrongtime",
+    "blackflag": "blackflagnightless",
+    "antinommination": "antinommy",
+    "antinomination": "antinommy",
+    "citp": "contagioninthepalace",
+    "contagion": "contagioninthepalace",
+    "dd": "desperationday",
+    "eome": "enemyofmyenemy",
+    "esun": "eternalsun",
+    "fe": "friendsandenemies",
+    "mm": "masonsandmonks",
+    "sh": "safehouse",
+    "cfd": "chinesefiredrill",
+    "cw": "counterwagon",
+    "cross": "crosslynch",
+    "crossvote": "crosslynch",
+    "fd": "firedrill",
+    "parking": "park",
+    "parked": "park",
+    "potatoe": "potato",
+    "potatotown": "potato",
+    "potatotownie": "potato",
+    "rvs": "randomvotingstage",
+    "sl": "scumlean",
+    "sheep": "sheeping",
+    "softing": "soft",
+    "tl": "townlean",
+    "turboing": "turbo",
+    "vanitylynch": "vanitywagon",
+    "vanity": "vanitywagon",
+    "vca": "wagonomics",
+    "votecountanalysis": "wagonomics",
+    "bus": "bussing",
+    "bw": "bandwagon",
+    "cc": "counter_claim",
+    "counterclaim": "counter_claim",
+    "defmaj": "definite_majority",
+    "definitemajority": "definite_majority",
+    "fillering": "filler",
+    "fos": "finger_of_suspect",
+    "l-1": "l-x",
+    "l-2": "l-x",
+    "l-3": "l-x",
+    "l-4": "l-x",
+    "lx": "l-x",
+    "l1": "l-x",
+    "l2": "l-x",
+    "l3": "l-x",
+    "l4": "l-x",
+    "maj": "majority",
+    "modplur": "modified_plurality",
+    "plur": "plurality",
+    "qh": "quickhammer",
+    "sr": "scumread",
+    "tr": "townread",
+    "deathnomination": "deathnommy",
+    "deathnommination": "deathnommy"
   }
 }`);

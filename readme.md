@@ -2,4 +2,4 @@
 
 [c9++ generator](https://whalemer.github.io/index)
 
-[role parser rewrite test](https://whalemer.github.io/roleparser)
+[role parser rewrite test (no longer really necessary)](https://whalemer.github.io/roleparser)
